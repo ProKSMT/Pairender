@@ -1,5 +1,5 @@
 /**
- * SynthVerse Website - Main JavaScript
+ * Pairender Website - Main JavaScript
  */
 
 // ============================================
@@ -40,11 +40,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Copy BibTeX Citation
 // ============================================
 function copyBibTeX() {
-    const citationText = `@inproceedings{synthverse2025,
-  title={SynthVerse: A Large-Scale Diverse Synthetic Dataset for Point Tracking},
-  author={Zhao, Weiguang and Xu, Haoran and Miao, Xingyu and Zhao, Qin and Zhang, Rui and Huang, Kaizhu and Gao, Ning and Cao, Peizhou and Sun, Mingze and Yu, Mulin and Lu, Tao and Xu, Linning and Dong, Junting and Pang, Jiangmiao},
+    const citationText = `@inproceedings{wu2026pairformer,
+  title={Matching Every Pair to Track Every Point: PairFormer for All-Pairs Tracking and Video Trajectory Fields},
+  author={Guangyang Wu and Youran Ding and Xinyu Che and Benyuan Sun and Yi Yang and Xiaohong Liu},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025}
+  year={2026}
 }`;
 
     const copyBtn = document.querySelector('.copy-btn');
@@ -91,7 +91,7 @@ function fallbackCopy(text, onSuccess) {
 // Fade-in Animation on Scroll
 // ============================================
 function fadeInOnScroll() {
-    const elements = document.querySelectorAll('.feature-card, .stat-card, .scene-type-card, .finding-card, .download-card, .video-container, .pipeline-step, .table-wrapper');
+    const elements = document.querySelectorAll('.feature-card, .stat-card, .annotation-card, .scene-type-card, .finding-card, .download-card, .video-container, .pipeline-step, .table-wrapper');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
     initVizIframe();
 
-    console.log('🚀 SynthVerse website loaded successfully!');
+    console.log('Pairender website loaded successfully!');
 });
 
 // ============================================
